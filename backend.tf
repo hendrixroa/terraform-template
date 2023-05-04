@@ -15,7 +15,7 @@ terraform {
 
 // All infra is over AWS and is the provider used by default.
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
 // Used by get the current aws number account.
